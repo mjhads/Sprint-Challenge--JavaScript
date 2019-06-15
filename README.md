@@ -81,7 +81,8 @@ Your finished project must include all of the following requirements:
 Test your knowledge of objects and arrays. 
 * [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
 
-## Task 2: Functions
+## Task 2: Functions done
+<!-- done -->
 This challenge takes a look at callbacks and closures as well as scope. 
 * [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
