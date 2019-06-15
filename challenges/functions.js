@@ -6,6 +6,11 @@
   * The last parameter accepts a callback 
   * In the body of the function return the callback with the two parameters that you created
 */
+ 
+
+function consume(a, b, cb) {
+  return cb(a, b);
+}
 
 
 /* Step 2: Create several functions to callback with consume();
@@ -15,10 +20,25 @@
 */
 
 
+function add(x, y) {
+  return x + y;
+}
+//consume(4, 3, add);
+
+function multiply(num1, num2) {
+  return num1 * num2;
+}
+//consume(9, 9, multiply);
+
+function greeting(fn, ln) {
+  return 'fn ln, nice to meet you!';
+};
+//consume('melody', 'hads', greeting);
+
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// consume(2,2,add); // 4
-// consume(10,16,multiply); // 160
-// consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+consume(2,2,add); // 4
+consume(10,16,multiply); // 160
+consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
@@ -28,15 +48,15 @@
 // Explanation: 
 
 
-const external = "I'm outside the function";
+// const external = "I'm outside the function";
 
-function myFunction() {
-  console.log(external);
-  const internal = "Hello! I'm inside myFunction!";
+// function myFunction() {
+//   console.log(external);
+//   const internal = "Hello! I'm inside myFunction!";
 
-  function nestedFunction() {
-    console.log(internal);
-  };
-  nestedFunction();
-}
-myFunction();
+//   function nestedFunction() {
+//     console.log(internal);
+//   };
+//   nestedFunction();
+// }
+// myFunction();
