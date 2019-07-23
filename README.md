@@ -30,32 +30,45 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+.forEach() doesn't return anything and .map() does.
+
 2. What is the difference between a function and a method?
+
+A method is a function used inside of an object. 
 
 3. What is closure?
 
+A closure is the combination of a function and the lexical environment within which that function was declared.
+
 4. Describe the four rules of the 'this' keyword.
 
+Rule 1 -  Whenever a function is contained in the global scope, the value of this inside of that function will be the window object.
+Rule 2 - Whenever a function is called by a preceding dot, the object before that dot is this
+Rule 3 - Whenever a constructor function is used, this refers to the specific instance of the object that is created and returned by the constructor function.
+Rule 4 - Whenever JavaScript’s call or apply method is used, this is explicitly defined.
+
 5. Why do we need super() in an extended class?
+
+To access and call functions on an object's parent.
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [ check ] Create a forked copy of this project.
+- [ check ] Add PM as collaborator on Github.
+- [ check ] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [ check ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [ check ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [ check ] You are now ready to build this project with your preferred IDE
+- [ check ] Implement the project on your Branch, committing changes regularly.
+- [ check ] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request
-- [ ] PM then will count the HW as done by  merging the branch back into master.
+- [ check ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [ check ] Add your Project Manager as a Reviewer on the Pull-request
+- [ okay ] PM then will count the HW as done by  merging the branch back into master.
 
 
 ## Minimum Viable Product
@@ -68,7 +81,8 @@ Your finished project must include all of the following requirements:
 Test your knowledge of objects and arrays. 
 * [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
 
-## Task 2: Functions
+## Task 2: Functions done
+<!-- done -->
 This challenge takes a look at callbacks and closures as well as scope. 
 * [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
